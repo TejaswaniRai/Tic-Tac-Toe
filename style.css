@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(135deg, #00ff00, #ffff00);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(0, 70, 0);
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(0, 70, 0);
+    margin-bottom: 20px;
+    animation: 1.5s;
+  }
+  
+  @keyframes neonGreenYellow {
+    0% { 
+      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #ffff00; 
+    }
+    100% { 
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #ffff00; 
+    }
+  }
+  
+  .game-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .play-btn {
+    padding: 10px 20px;
+    background-color: #00b3ff;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-btn:hover {
+    background-color: #289dee;
+    transform: scale(1.1);
+  }
+  
+  .board {
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+    ;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff222;
+    border: 2px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    color: black; /* Black X and O */
+    position: relative;
+  }
+  
+  .cell:hover {
+    background-color: #f8c002;
+    transform: scale(1.05);
+  }
+  
+  .cell.x {
+    color: black;
+  }
+  
+  .cell.o {
+    color: black;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  .turn {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    background-color: #00b3ff;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-btn:hover {
+    background-color: #289dee;
+    transform: scale(1.1);
+  }
+  
+  
